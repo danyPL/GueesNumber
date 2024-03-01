@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GueesNumber.MainPage">
+    <HorizontalStackLayout BackgroundColor="Blue">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+
+            >
+
+            <Label Text="Zgadnij Liczbe!" FontSize="Large" TextColor="White" Margin="0,100,0,0"/>
+            <Label Text="Spróbuj odgadnąć liczbę z zakresu (0,30)" FontSize="Medium" Margin="0,10,0,0" TextColor="White"/>
+            <Border Stroke="White" WidthRequest="70" HeightRequest="50"
+        StrokeThickness="4"
+        StrokeShape="RoundRectangle 1,1,1,1"
+        Background="black"
+        HorizontalOptions="Center">
+                <Entry x:Name="userNumber" TextColor="Black" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" BackgroundColor="White"/>
+
+            </Border>
+            <Label Text="Pozostała liczba prób: 5" x:Name="remainsTrailsLabel" Margin="0,10,0,0" TextColor="White" />
+            <Button Text="Sprawdź" Margin="0,0,0,30" Clicked="StartGame" BackgroundColor="Yellow" FontAttributes="Bold" TextColor="Black"/>
+
+            <Button Text="Resetuj grę" HorizontalOptions="Center" BackgroundColor="Yellow" Clicked="Rgame" TextColor="Black" FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    
+    </HorizontalStackLayout>
+        
+
+</ContentPage>
